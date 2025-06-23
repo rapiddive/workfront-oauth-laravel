@@ -294,26 +294,7 @@ a:hover {
 		}
 	}
 }
-.btn-outline-white {	
-	color: white;	
-	background-color: transparent;	
-	border-color: white;	
-	box-shadow: 0 0px 10px -5px $black-1;	
-	&:hover {	
-		color: black;	
-		background-color: white;	
-		border-color: white;	
-	}	
-	&:focus,	
-	&.focus {	
-		box-shadow: 0 0 0 2px $black-1;	
-	}	
-}	
-a.btn-outline-white {	
-	&:hover {	
-		color: $primary;	
-	}	
-}
+
 .show>.btn-outline-primary.dropdown-toggle {
 	color: $white;
 	background-color: $primary;
@@ -1371,16 +1352,16 @@ pre {
 }
 
 li.ui-timepicker-selected {
-	background: $primary !important;
-	color: $white !important;
+	background: $primary;
+	color: $white;
 }
 
 .ui-timepicker-list {
 
 	li:hover,
 	.ui-timepicker-selected:hover {
-		background: $primary !important;
-		color: $white !important;
+		background: $primary;
+		color: $white;
 	}
 }
 
@@ -1799,10 +1780,6 @@ li.ui-timepicker-selected {
 
 .bg-white-50 {
 	background-color: rgba(225, 225, 225, 0.2);
-}
-
-.bg-white-transparent {	
-	background-color: $white-1;	
 }
 
 /*------ Colors End-------*/

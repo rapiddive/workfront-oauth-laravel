@@ -11,7 +11,7 @@
 								</a>
 							</div>
 							<div class="logo-horizontal">
-								<a href="{{url('index')}}">
+								<a href="javascript:void(0);">
 									<img src="{{asset('build/assets/images/brand/logo.png')}}" class="header-brand-img desktop-lgo"
 										alt="Azea logo">
 									<img src="{{asset('build/assets/images/brand/logo1.png')}}" class="header-brand-img dark-logo"
@@ -101,7 +101,7 @@
 													data-bs-toggle="dropdown">
 													<span class="header-avatar1">
 														<img src="{{asset('build/assets/images/flags/flags/5.jpg')}}" alt="img"
-															class="mb-1 country">
+															class="me-2 mb-1 country">
 														<span class="fs-14 font-weight-semibold country-text"> English</span>
 													</span>
 												</a>
@@ -144,7 +144,7 @@
 														<span class="badge fs-10 bg-secondary br-7 ms-auto">New</span>
 													</div>
 													<div class="header-dropdown-list message-menu ps">
-														<a class="dropdown-item border-bottom" href="{{url('chat')}}">
+														<a class="dropdown-item border-bottom" href="javascript:void(0);">
 															<div class="d-flex align-items-center">
 																<div>
 																	<span
@@ -164,7 +164,7 @@
 																</div>
 															</div>
 														</a>
-														<a class="dropdown-item border-bottom" href="{{url('chat')}}">
+														<a class="dropdown-item border-bottom" href="javascript:void(0);">
 															<div class="d-flex align-items-center">
 																<div>
 																	<span
@@ -184,7 +184,7 @@
 																</div>
 															</div>
 														</a>
-														<a class="dropdown-item border-bottom" href="{{url('chat')}}">
+														<a class="dropdown-item border-bottom" href="javascript:void(0);">
 															<div class="d-flex align-items-center">
 																<div>
 																	<span
@@ -204,7 +204,7 @@
 																</div>
 															</div>
 														</a>
-														<a class="dropdown-item border-bottom" href="{{url('chat')}}">
+														<a class="dropdown-item border-bottom" href="javascript:void(0);">
 															<div class="d-flex align-items-center">
 																<div>
 																	<span
@@ -225,7 +225,7 @@
 																</div>
 															</div>
 														</a>
-														<a class="dropdown-item border-bottom" href="{{url('chat')}}">
+														<a class="dropdown-item border-bottom" href="javascript:void(0);">
 															<div class="d-flex align-items-center">
 																<div>
 																	<span
@@ -245,7 +245,7 @@
 																</div>
 															</div>
 														</a>
-														<a class="dropdown-item" href="{{url('chat')}}">
+														<a class="dropdown-item" href="javascript:void(0);">
 															<div class="d-flex align-items-center">
 																<div>
 																	<span
@@ -276,7 +276,7 @@
 														</div>
 													</div>
 													<div class=" text-center p-2 pt-3 border-top">
-														<a href="{{url('chat')}}"
+														<a href="javascript:void(0);"
 															class="fs-13 btn btn-primary btn-md btn-block">See
 															More</a>
 													</div>
@@ -297,7 +297,7 @@
 														<span class="badge fs-10 bg-secondary br-7 ms-auto">New</span>
 													</div>
 													<div class="notify-menu ps">
-														<a href="{{url('email-inbox')}}"
+														<a href="javascript:void(0);"
 															class="dropdown-item border-bottom d-flex ps-4">
 															<div
 																class="notifyimg  text-primary bg-primary-transparent border-primary">
@@ -308,7 +308,7 @@
 																<div class="small text-muted">3 hours ago</div>
 															</div>
 														</a>
-														<a href="{{url('email-inbox')}}"
+														<a href="javascript:void(0);"
 															class="dropdown-item border-bottom d-flex ps-4">
 															<div
 																class="notifyimg  text-secondary bg-secondary-transparent border-secondary">
@@ -319,7 +319,7 @@
 																<div class="small text-muted">5 hour ago</div>
 															</div>
 														</a>
-														<a href="{{url('email-inbox')}}"
+														<a href="javascript:void(0);"
 															class="dropdown-item border-bottom d-flex ps-4">
 															<div
 																class="notifyimg  text-danger bg-danger-transparent border-danger">
@@ -330,7 +330,7 @@
 																<div class="small text-muted">45 mintues ago</div>
 															</div>
 														</a>
-														<a href="{{url('email-inbox')}}"
+														<a href="javascript:void(0);"
 															class="dropdown-item border-bottom d-flex ps-4 mb-2">
 															<div
 																class="notifyimg  text-success  bg-success-transparent border-success">
@@ -351,13 +351,12 @@
 														</div>
 													</div>
 													<div class=" text-center p-2">
-														<a href="{{url('email-inbox')}}"
+														<a href="javascript:void(0);"
 															class="btn btn-primary btn-md fs-13 btn-block">View
 															All</a>
 													</div>
 												</div>
 											</div>
-
 											<div class="dropdown profile-dropdown d-flex">
 												<a href="javascript:void(0);" class="nav-link pe-0 leading-none"
 													data-bs-toggle="dropdown">
@@ -374,7 +373,7 @@
 															Designer</span>
 														<div class="dropdown-divider"></div>
 													</div>
-													<a class="dropdown-item d-flex" href="{{url('profile1')}}">
+													<a class="dropdown-item d-flex" href="javascript:void(0);">
 														<svg class="header-icon me-2" xmlns="http://www.w3.org/2000/svg"
 															height="24" viewBox="0 0 24 24" width="24">
 															<path d="M0 0h24v24H0V0z" fill="none"></path>
@@ -384,7 +383,7 @@
 														</svg>
 														<div class="fs-13">Profile</div>
 													</a>
-													<a class="dropdown-item d-flex" href="{{url('search')}}">
+													<a class="dropdown-item d-flex" href="javascript:void(0);">
 														<svg class="header-icon me-2" xmlns="http://www.w3.org/2000/svg"
 															height="24" viewBox="0 0 24 24" width="24">
 															<path d="M0 0h24v24H0V0z" fill="none"></path>
@@ -394,7 +393,7 @@
 														</svg>
 														<div class="fs-13">Settings</div>
 													</a>
-													<a class="dropdown-item d-flex" href="{{url('chat')}}">
+													<a class="dropdown-item d-flex" href="javascript:void(0);">
 														<svg class="header-icon me-2" xmlns="http://www.w3.org/2000/svg"
 															height="24" viewBox="0 0 24 24" width="24">
 															<path d="M0 0h24v24H0V0z" fill="none"></path>
@@ -404,7 +403,7 @@
 														</svg>
 														<div class="fs-13">Messages</div>
 													</a>
-													<a class="dropdown-item d-flex" href="{{url('login1')}}">
+													<a class="dropdown-item d-flex" href="javascript:void(0);">
 														<svg class="header-icon me-2" xmlns="http://www.w3.org/2000/svg"
 															enable-background="new 0 0 24 24" height="24"
 															viewBox="0 0 24 24" width="24">

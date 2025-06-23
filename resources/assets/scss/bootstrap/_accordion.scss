@@ -234,43 +234,6 @@
   .acc-body {
 	padding: 15px;
 	border: 1px solid $border;
-	border-block-start: 0;
-	border-end-end-radius: 5px;
-	border-end-start-radius: 5px;
   }
-
-  .panel-heading [aria-expanded="true"] {
-	i {
-		transform: rotate(90deg);
-	}
-  }
-
-.accordion-button:focus {	
-    border-color: inherit;	
-    box-shadow: none;	
-}	
-.accordion-button:not(.collapsed) {	
-	color: $primary;	
-	background-color: transparent;	
-	box-shadow: none;	
-}	
-.accordion>.accordion-item>.accordion-header {	
-	border-radius: 0.25rem;	
-	overflow: hidden;	
-	a {	
-		display: block;	
-		position: relative;	
-		padding: 12px;	
-		color: $primary;	
-		font-size: 0.95rem;	
-		transition: all ease 0.3s;	
-	}	
-}	
-.accordion-flush .accordion-item:not(:first-of-type) {	
-	margin-block-start: 0.65rem;	
-}	
-.accordion-header [aria-expanded=true] i {	
-	transform: rotate(90deg);	
-}
 
   /*-------Accordion-----------*/

@@ -36,7 +36,7 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
 	display: inline-block;
 	display: inline;
 	zoom: 1;
-	z-index: 1;
+	z-index: 999998;
 	overflow: hidden;
 	-webkit-box-sizing: content-box;
 	-moz-box-sizing: content-box;
@@ -484,7 +484,7 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
 	.sp-thumb-el.sp-thumb-active {
 		border-color: orange;
 	}
-	width: 100px;
+	width: 220px;
 	max-width: 220px;
 	span {
 		&:hover {

@@ -2988,7 +2988,7 @@ i.fa.round {
 	}
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
 	.text-xl-left {
 		text-align: start !important;
 	}
@@ -4857,7 +4857,7 @@ a.text-light {
 }
 
 .text-dark {
-	color: $default-color  !important;
+	color: $color  !important;
 }
 
 a.text-dark {

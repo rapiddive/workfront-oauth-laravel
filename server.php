@@ -4,8 +4,8 @@
 Project         :   Azea - Laravel Bootstrap 5 Admin & Dashboard Template
 @package        :   Laravel
 Laravel Version :   9.43.0
-PHP Version     :   8.1.12
-Upadated Date   :   02-02-2023
+PHP Version     :   8.1.6
+Upadated Date    :   27-12-2022
 Copyright       :   Spruko Technologies Private Limited
 Author          :   SPRUKO™
 Author URL      :   https://themeforest.net/user/sprukosoft

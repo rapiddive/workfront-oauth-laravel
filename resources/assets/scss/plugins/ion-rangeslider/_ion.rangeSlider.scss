@@ -29,7 +29,6 @@ Build date: 2019-12-19 16:51:02
     display: block;
     inset-inline-start: 0;
     width: 0;
-    background: $primary !important;
   }
   
   .irs-shadow {
@@ -44,6 +43,11 @@ Build date: 2019-12-19 16:51:02
     display: block;
     box-sizing: border-box;
     cursor: default;
+    z-index: 1;
+  
+    &.type_last {
+      z-index: 1;
+    }
   }
   
   .irs-min, .irs-max {
@@ -158,7 +162,7 @@ Build date: 2019-12-19 16:51:02
     .irs-line {
       inset-block-start: 25px;
       height: 12px;
-      background-color: #eeeeef;
+      background-color: $background;
       border-radius: 4px;
     }
   
@@ -235,7 +239,7 @@ Build date: 2019-12-19 16:51:02
     }
   
     .irs-grid-pol {
-      background-color: #c5c5db;
+      background-color: $background;
     }
   
     .irs-grid-text {
@@ -265,7 +269,7 @@ Build date: 2019-12-19 16:51:02
       background-color: #92bce0;
       border: 1px solid #428bca;
       background: linear-gradient(to bottom, #ffffff 0%, #428bca 30%, #b9d4ec 100%);
-      box-shadow: inset 0 0 1px 1px $white-5;
+      box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.5);
     }
   
     .irs-bar--single {
@@ -362,7 +366,7 @@ Build date: 2019-12-19 16:51:02
       height: 13px;
       border: 1px solid #a3adc1;
       border-top-width: 0;
-      box-shadow: 1px 1px 1px $black-1;
+      box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
       border-radius: 0 0 3px 3px;
   
       > i {
@@ -625,7 +629,7 @@ Build date: 2019-12-19 16:51:02
       line-height: 1;
       inset-block-start: 0;
       padding: 3px 5px;
-      background-color: $black-1;
+      background-color: rgba(0, 0, 0, 0.1);
       border-radius: 4px;
     }
   
@@ -713,7 +717,7 @@ Build date: 2019-12-19 16:51:02
       line-height: 1;
       inset-block-start: 0;
       padding: 3px 5px;
-      background-color: $black-1;
+      background-color: rgba(0, 0, 0, 0.1);
     }
   
     .irs-from, .irs-to, .irs-single {

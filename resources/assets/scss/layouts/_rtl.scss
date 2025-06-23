@@ -5,37 +5,10 @@ body.rtl {
     text-align: right;
 }
 .rtl{
-  .btn.dropdown-toggle ~ .dropdown-menu {
-    inset: 0px 0px auto auto !important; 
-  }
-  .apexcharts-legend-marker {
-    margin-left: 3px;
-  }
-  .apexcharts-canvas .apexcharts-datalabels-group .apexcharts-text{
-    text-anchor: middle !important;
-  }
   .select2-container--open .select2-dropdown--below,
   .select2-container--open .select2-dropdown--above {
     direction: ltr;
   }
-  .sub-slide.is-expanded .sub-angle {
-    transform: rotate(-90deg);
-  }
-  .slide.is-expanded .angle {
-    transform: rotate(-90deg);
-  }
-  .sub-slide2.is-expanded .sub-angle2 {
-    transform: rotate(-90deg);
-  }
-  .panel-heading [aria-expanded="true"] {
-    i {
-      transform: rotate(-90deg);
-    }
-  }
-  .intl-tel-input .flag-dropdown .selected-flag {
-    padding: 9px 24px 10px 16px;
-  }
-  
   .tree li i {
     float: right;
     margin-block-start: 5px;
@@ -69,12 +42,6 @@ body.rtl {
   .fc-icon-chevron-left:before {
     content: "\e900";
   }
-  .fe-arrow-right:before {	
-    content: "\eaff";	
-  }	
-  .bx-right-arrow-alt:before {	
-    content: "\ebab";	
-  }
   .lg-actions .lg-next:before {
     content: "\e094" !important;
   }
@@ -87,9 +54,7 @@ body.rtl {
   .fa-angle-double-left:before {
     content: "\f101";
   }
-  .fa-quote-left:before {	
-    content: "\f10e";	
-  }
+
   .carousel-item-next, .active.carousel-item-end {
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
@@ -123,25 +88,14 @@ body.rtl {
         right: 70rem !important;
     }
   }
-  .ribbon-top-left span {	
-    transform: rotate(-45deg);	
-  }
-  @media (max-width: 991px) {
-    .ui-timepicker-wrapper {
-        right: 75px !important;
-        left: 0 !important;
-    }
-  }
+
+
   @media (min-width: 992px){
     .main-sidemenu .slide-right,
     .main-sidemenu .slide-left {
       svg {
         transform: rotate(180deg);
       }
-    }
-    .ui-timepicker-wrapper {
-      right: 300px !important;
-      left: 0 !important;
     }
   }
     .lg-actions .lg-next:before {
@@ -165,9 +119,7 @@ body.rtl {
   .btn-group-toolbar .btn-group:last-child .btn:last-child {
     border-radius: 5px 0 0 5px;
   }
-  .accordion-header [aria-expanded=true] i {	
-    transform: rotate(-90deg);	
-  }
+
   .apexcharts-canvas text{
     text-anchor: start;
   }

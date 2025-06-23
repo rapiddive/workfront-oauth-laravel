@@ -5,13 +5,13 @@
 		<!-- META DATA -->
         <meta charset="UTF-8">
         <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
-        <meta name="Description" content="Azea - Laravel Admin Dashboard Template">
+        <meta name="Description" content="Azea - Laravel Starerkit">
         <meta name="Author" content="Spruko Technologies Private Limited">
-        <meta name="keywords" content="admin dashboard, admin dashboard laravel, admin panel template, blade template, blade template laravel, bootstrap template, dashboard laravel, laravel admin, laravel admin dashboard, laravel admin panel, laravel admin template, laravel bootstrap admin template, laravel bootstrap template, laravel template, vite laravel template, vite admin template, vite laravel admin, vite laravel admin dashboard, vite laravel bootstrap admin template,">
+        <meta name="keywords" content="admin dashboard, admin dashboard laravel, admin panel template, blade template, blade template laravel, bootstrap template, dashboard laravel, laravel admin, laravel admin dashboard, laravel admin panel, laravel admin template, laravel bootstrap admin template, laravel bootstrap template, laravel template, vite laravel template, vite admin template,">
 
         <!-- TITLE -->
-		<title> Azea - Laravel Bootstrap5 Premium Dashboard Template</title>
-
+		<title> Azea - Laravel Starerkit </title>
+ 
         <!-- FAVICON -->
 		<link rel="icon" href="{{asset('build/assets/images/brand/favicon.png')}}" type="image/x-icon">
 
@@ -36,12 +36,6 @@
 	</head>
 
 	<body class="app sidebar-mini ltr">
-
-		<!--- GLOBAL LOADER -->
-		<div id="global-loader" >
-			<img src="{{asset('build/assets/images/svgs/loader.svg')}}" class="loader-img" alt="loader">
-		</div>
-		<!--- END GLOBAL LOADER -->
 
         <!-- PAGE -->
 		<div class="page">
@@ -68,7 +62,7 @@
                 </div>
                 <!-- END MAIN-CONTENT -->
             </div>
-            
+
             <!-- MAIN-FOOTER -->
             @include('layouts.components.main-footer')
 
@@ -78,20 +72,25 @@
         <!-- END PAGE-->
 
         <!-- SCRIPTS -->
+
+        <!-- JQUERY MIN JS -->
+        <script src="{{asset('build/assets/plugins/jquery/jquery.min.js')}}"></script>
+
+        <!-- BOOTSTRAP5 BUNDLE JS -->
+        <script src="{{asset('build/assets/plugins/bootstrap/popper.min.js')}}"></script>
+        <script src="{{asset('build/assets/plugins/bootstrap/js/bootstrap.min.js')}}"></script>
+
+        <!-- PERFECT-SCROLLBAR JS  -->
+        <script src="{{asset('build/assets/plugins/p-scrollbar/p-scrollbar.js')}}"></script>
+        <script src="{{asset('build/assets/plugins/p-scrollbar/p-scroll1.js')}}"></script>
+        <script src="{{asset('build/assets/plugins/p-scrollbar/p-scroll.js')}}"></script>
         
-        @include('layouts.components.scripts')
-
-        <!-- STICKY JS -->
-		<script src="{{asset('build/assets/sticky.js')}}"></script>
-
-        <!-- THEMECOLOR JS -->
-        @vite('resources/assets/js/themeColors.js')
-
+        <!-- SIDEMENU JS -->
+        <script src="{{asset('build/assets/plugins/sidemenu/sidemenu.js')}}"></script>
 
         <!-- APP JS -->
 		@vite('resources/js/app.js')
-
-
+        
         <!-- END SCRIPTS -->
 
 	</body>

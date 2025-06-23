@@ -70,7 +70,7 @@
 	}
   
 	&:hover, &:focus {
-	//   z-index: 1;
+	  z-index: 1;
 	  text-decoration: none;
 	}
   
@@ -80,7 +80,7 @@
 	}
   
 	&.active {
-	  z-index: 0;
+	  z-index: 1;
 	  background-color: #f0f0f2;
 	  border: 1px solid rgba(238, 238, 238, 0.5);
 	  color: $color;

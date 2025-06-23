@@ -31,4 +31,11 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'workfront' => [
+        'client_id' => env('WORKFRONT_CLIENT_ID', '1c1cff1090bc1aa159735dba8bf9c8a6'),
+        'client_secret' => env('WORKFRONT_CLIENT_SECRET', '4VAB46Un-yNBNSO-CCyLsiOpC1zWr4VZsSQL8JIEGHo'),
+        'redirect_uri' => env('WORKFRONT_REDIRECT_URI', 'https://app.wf-oauth.test/oauth/callback'),
+        'url' => env('WORKFRONT_URL', 'https://jan2025wk2reports7.testdrive.workfront.com'),
+    ]
+
 ];

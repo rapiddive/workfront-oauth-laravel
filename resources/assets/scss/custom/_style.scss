@@ -44,7 +44,7 @@ figure {
 
 
 a {
-  color: $color;
+  color: #6c756e;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
@@ -493,12 +493,16 @@ small,
   font-family: 'Nunito Sans', sans-serif;
 }
 
+.number-font1 {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
 /*----- Global Loader -----*/
 
 #global-loader {
   position: fixed;
   z-index: 99999999;
-  background: $white;
+  background: rgb(255, 255, 255);
   inset-inline-start: 0;
   inset-block-start: 0;
   inset-inline-end: 0;
@@ -635,8 +639,8 @@ ul {
 }
 
 .profile-footer {
-  margin: 25px -24px -25px -24px;
-  padding: 15px 22px;
+  margin: 25px -25px -25px -25px;
+  padding: 15px;
   background: #f0f0f2;
 }
 
@@ -866,10 +870,11 @@ hr.divider:after {
 
 @media (max-width: 567px) {
   .card-pay .tabs-menu li {
+    a {
+      margin-block-end: 15px;
+    }
+
     width: 100%;
-  }
-  .card-pay .tabs-menu.nav li {	
-    border-inline-end: 0;	
   }
 }
 
@@ -1168,110 +1173,10 @@ hr.divider:after {
 }
 
 .tooltip-static-demo .tooltip {
-	z-index: 0 !important;
+	z-index: 9 !important;
 }
 .error-text {
   direction: initial;
 }
 
-
-.cube1 div{
-	width: 50px;
-	height: 50px;
-	position: absolute;
-  background-position: center;
-  background-size: cover;
-  z-index: 1;
-  
-
-  &:nth-child(1) {
-    inset-block-start: 20%;
-    inset-inline-end: 4%;
-    background-image: url(http://127.0.0.1:8000/build/assets/images/pngs/19.png);
-    animation: sk-cubemove 10s linear infinite;
-    opacity: 0.16;
-  }
-
-  &:nth-child(2) {
-    inset-block-end: 20%;
-    inset-inline-start: 4%;
-    background-image: url(http://127.0.0.1:8000/build/assets/images/pngs/19.png);
-    animation: sk-cubemove 10s linear infinite;
-    opacity: 0.16;
-  }
-
-  &:nth-child(3) {
-    inset-block-end: 12%;
-    inset-inline-end: 15%;
-    background-image: url(http://127.0.0.1:8000/build/assets/images/pngs/19.png);
-    animation: sk-cubemove 10s linear infinite;
-    opacity: 0.16;
-  }
-
-  &:nth-child(4) {
-    inset-block-start: 6%;
-    inset-inline-start: 21%;
-    background-image: url(http://127.0.0.1:8000/build/assets/images/pngs/19.png);
-    animation: sk-cubemove1 10s linear infinite;
-    opacity: 0.16;
-  }
-  &:nth-child(5) {	
-    inset-block-end: 0%;	
-    inset-inline-end: 50%;	
-    background-image: url(http://127.0.0.1:8000/build/assets/images/pngs/19.png);	
-    animation: sk-cubemove 10s linear infinite;	
-    opacity: 0.16;	
-  }	
-  &:nth-child(6) {	
-    inset-block-start: 45%;	
-    inset-inline-start: 60%;	
-    background-image: url(http://127.0.0.1:8000/build/assets/images/pngs/19.png);	
-    animation: sk-cubemove1 10s linear infinite;	
-    opacity: 0.16;	
-  }	
-}
-
-  @-webkit-keyframes sk-cubemove {
-    0%, 100% {
-      -webkit-transform: translateY(0) rotate(0);
-    }
-  
-    80% {
-      -webkit-transform: translateY(-400px) rotate(180deg);
-    }
-  
-  }
-  
-  @keyframes sk-cubemove {
-    0%, 100% {
-      -webkit-transform: translateY(0) rotate(0);
-    }
-  
-    80% {
-      -webkit-transform: translateY(-400px) rotate(180deg);
-    }
-  
-  }
-
-  @-webkit-keyframes sk-cubemove1 {
-    0%, 100% {
-      -webkit-transform: translateY(100px) rotate(180deg);
-    }
-  
-    80% {
-      -webkit-transform: translateY(0) rotate(0);
-    }
-  
-  }
-
-  @keyframes sk-cubemove1 {
-    0%, 100% {
-      -webkit-transform: translateY(100px) rotate(180deg);
-    }
-  
-    80% {
-      -webkit-transform: translateY(0) rotate(0);
-    }
-  
-  }
 /*----Style End ------*/

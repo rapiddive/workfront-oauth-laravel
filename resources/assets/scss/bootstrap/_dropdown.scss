@@ -27,7 +27,7 @@
 	position: absolute;
 	inset-block-start: 100%;
 	inset-inline-start: 0;
-	z-index: 1;
+	z-index: 1000;
 	display: none;
 	float: $float-left;
 	min-width: 10rem;
@@ -266,7 +266,7 @@
 	  &:after {
 		content: '';
 		position: absolute;
-		inset-block-start: -9px;
+		inset-block-start: -8.5px;
 		inset-inline-start: 16px;
 		border-block-end: 10px solid $white;
 		border-inline-start: 10px solid transparent;
@@ -324,7 +324,7 @@
   }
   
   .btn-group > .btn:hover, .btn-group-vertical > .btn:hover {
-	z-index: 0;
+	z-index: 1;
   }
   
   .btn-group > .btn {
@@ -483,7 +483,7 @@
   
   /*-----List Of Dropdwons-----*/
   
-  .btn.dropdown-toggle ~ .dropdown-menu {
+  btn.dropdown-toggle ~ .dropdown-menu {
 	background-color: rgb(244, 244, 244) !important;
 	background-color: rgb(255, 255, 255) !important;
 	border: 0 solid rgb(66, 133, 244) !important;
@@ -644,7 +644,7 @@
   }
   
   .dropdown-toggle.split-dropdown {
-	border-inline-start: 1px solid $black-2;
+	border-inline-start: 1px solid rgba(0, 0, 0, 0.2);
   }
 
   @media (max-width: 991px) {
@@ -680,7 +680,5 @@
   .btn-outline-success:active {
     color: white;
 }
-.table-responsive .dt-buttons div.dt-button-collection {
-    z-index: 2001;
-}
+
   /*------DropDowns End-------*/

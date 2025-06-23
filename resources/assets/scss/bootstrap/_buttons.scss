@@ -304,7 +304,7 @@ fieldset:disabled a.btn {
 	&.disabled,
 	&:disabled {
 		background-color: #f0f0f2;
-		border-color: #f0f0f2 !important;
+		border-color: #f0f0f2;
 	}
 
 	&:not(:disabled):not(.disabled) {
@@ -736,8 +736,8 @@ input {
 }
 
 .btn-icon {
-	padding-inline-start: .6rem;
-	padding-inline-end: .6rem;
+	padding-inline-start: .5rem;
+	padding-inline-end: .5rem;
 	text-align: center;
 }
 
@@ -1537,7 +1537,7 @@ input {
 		color: $white  !important;
 		background-color: #ec82ef;
 		border-color: #ec82ef;
-		opacity: 0.85;
+		opacity: 0.8;
 	}
 
 	&:focus,
@@ -1903,12 +1903,11 @@ input {
 		background-color: $white;
 		background-image: none;
 		border-color: #e7e9f1;
-		opacity: 0.9;
 	}
 
 	&:focus,
 	&.focus {
-		box-shadow: 0 0 0 2px $white-5;
+		box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
 	}
 
 	&.disabled,
@@ -1939,12 +1938,12 @@ input {
 
 	&:active:focus,
 	&.active:focus {
-		box-shadow: 0 0 0 2px $white-5;
+		box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
 	}
 }
 
 .show>.btn-white.dropdown-toggle:focus {
-	box-shadow: 0 0 0 2px $white-5;
+	box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
 }
 
 .btn-gray {
@@ -2212,8 +2211,10 @@ input {
 .btn-icon.btn-svg {
 	.svg-icon {
 		width: 16px;
-		margin-block-end: 2px;
+		margin-block-start: 2px;
 	}
+
+	line-height: 15px;
 }
 
 .btn-svgs {
@@ -2310,12 +2311,14 @@ input {
     border-color: $primary;
 }
 
-.btn-outline-primary {	
-	&:focus, &.focus {
-		box-shadow: none;
-	}
+.btn-outline-primary:focus, .btn-outline-primary.focus {
+    box-shadow: none;
 }
-.btn.disabled, .btn:disabled, fieldset:disabled .btn {	
-    border-color: initial;	
+
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    color: $white;
+    background-color: $primary;
+    border-color: $primary;
 }
+
 /*-------- Buttons End------*/

@@ -17,27 +17,24 @@
 		height: 40px;
 
 		.selected-flag {
-			padding-block-start:9px;
-			padding-block-end:10px;
-			padding-inline-start:16px;
-			padding-inline-end:24px;
+			padding: 9px 24px 10px 16px;
 			background: #f0f0f2;
 			border: 1px solid #e3e4e9;
-			border-block-end: 0;
+			border-bottom: 0;
 
 			&:hover {
 				background-color: #f0f0f2;
 			}
 
 			.down-arrow {
-				inset-block-start: 6px;
+				top: 6px;
 				position: relative;
-				inset-inline-start: 20px;
+				left: 20px;
 				width: 0;
 				height: 0;
-				border-inline-start: 4px solid transparent;
-				border-inline-end: 4px solid transparent;
-				border-block-start: 4px solid black;
+				border-left: 4px solid transparent;
+				border-right: 4px solid transparent;
+				border-top: 4px solid black;
 			}
 		}
 
@@ -51,15 +48,15 @@
 			background-color: white;
 			border: 0;
 			position: absolute;
-			inset-block-start: 42px;
+			top: 42px;
 			width: 250px;
 			max-height: 200px;
 			box-shadow: 0px 16px 18px rgba(4, 4, 7, 0.1);
 
 			.divider {
-				padding-block-end: 5px;
-				margin-block-end: 5px;
-				border-block-end: 1px solid #eaf0ff;
+				padding-bottom: 5px;
+				margin-bottom: 5px;
+				border-bottom: 1px solid #eaf0ff;
 			}
 
 			.country {
@@ -83,13 +80,12 @@
 
 			.flag {
 				display: inline-block;
-				vertical-align: middle;
-				margin-inline-end: 7px;
+				vertical-align: bottom;
+				margin-right: 6px;
 			}
 
 			.country-name {
-				margin-inline-end: 6px;
-				display: inline-block;
+				margin-right: 6px;
 			}
 		}
 	}
@@ -98,7 +94,7 @@
 		box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		height: 40px;
-		padding-inline-start: 67px;
+		padding-left: 67px;
 		position: relative;
 		z-index: 0;
 		border: 1px solid #e3e4e9;
@@ -120,7 +116,7 @@
 	.flag {
 		width: 16px;
 		height: 16px;
-		background: url("https://laravelui.spruko.com/azea/build/assets/plugins/telephoneinput/img/flags16.png") no-repeat;
+		background: url("http://127.0.0.1:8000/build/assets/plugins/telephoneinput/img/flags16.png") no-repeat;
 	}
 
 	._African_Union {

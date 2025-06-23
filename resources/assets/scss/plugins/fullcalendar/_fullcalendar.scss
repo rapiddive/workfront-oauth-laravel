@@ -306,7 +306,7 @@
 		table-layout: fixed;
 
 		table {
-			width: 100%;
+			width: 100% !important;
 
 			table-layout: fixed;
 
@@ -1555,7 +1555,7 @@ a.fc-event {
 	color: $white;
 	background-color: $primary;
 	border-color: $primary;
-	opacity: 0.85;
+	opacity: 0.5;
 }
 .fc-daygrid-event.fc-event {
 	background: $primary;
