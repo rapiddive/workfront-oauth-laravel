@@ -2,6 +2,7 @@
 
 namespace App\Services;
 
+use App\Http\Middleware\EnsureWorkfrontTokenIsValid;
 use App\Models\Settings;
 use Illuminate\Support\Facades\Http;
 
@@ -31,6 +32,11 @@ class WorkfrontService
         $url = "{$this->baseUrl}/attask/api/{$this->apiVersion}/{$endpoint}";
         $response = Http::withHeaders(['sessionID' => $this->token])
             ->{$method}($url, $params)->json();
+
+        if (isset($response['error']) && $response['error']['message'] === 'You are not currently logged in.') {
+            (new EnsureWorkfrontTokenIsValid())->refreshAccessToken();
+            $this->request($method, $endpoint, $params);
+        }
 
         return $response;
     }

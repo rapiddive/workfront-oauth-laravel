@@ -67,14 +67,14 @@
                                                        value="{{ $option['value'] }}"/>
                                             </div>
                                         @endforeach
+                                    @else
+                                        <input name="DE:{{ $field['name'] }}" id="{{ $field['label'] }}"
+                                               type="{{$field['displayType']}}"
+                                               class="form-control"/>
+                                    @endif
                                 </div>
-                                @else
-                                    <input name="DE:{{ $field['name'] }}" id="{{ $field['label'] }}"
-                                           type="{{$field['displayType']}}"
-                                           class="form-control"/>
-                                @endif
+                            @endforeach
                         </div>
-                        @endforeach
                     </div>
                 </div>
             </div>

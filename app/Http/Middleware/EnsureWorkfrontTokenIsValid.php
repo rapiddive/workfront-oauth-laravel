@@ -36,7 +36,7 @@ class EnsureWorkfrontTokenIsValid
      * @throws GuzzleException
      * @throws IdentityProviderException
      */
-    protected function refreshAccessToken(): void
+    public function refreshAccessToken(): void
     {
         $refreshToken = Settings::where('key', 'workfront_refresh_token')->value('value');
 
