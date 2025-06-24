@@ -66,7 +66,9 @@ class WorkfrontFormController extends Controller
                 $payload[$key] = $value;
             }
         }
+        dump($payload);
         $result = $workfront->createIssue($payload);
+        dd($result);
 //        session(['success' => $result->data['ID']]);
         return redirect()->back()->with('status', 'Submitted!');
     }

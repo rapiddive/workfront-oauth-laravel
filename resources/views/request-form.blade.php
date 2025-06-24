@@ -47,15 +47,20 @@
                                            class="fw-semibold mb-2"> {{$field['label']}} </label>
                                     @if ($field['displayType'] == 'select')
                                         <select class="form-select form-select-lg" aria-label=".form-select-lg"
-                                                name="DE:{{ $field['name'] }} id={{ $field['label'] }}">
+                                                name="DE:{{ $field['name'] }}" id="{{ $field['label'] }}">
                                             @foreach($field['options'] as $option)
                                                 <option value="{{ $option['value'] }}">{{ $option['label'] }}</option>
                                             @endforeach
                                         </select>
                                     @elseif ($field['displayType'] == 'MULT')
-                                        <div class="choices" data-type="select-multiple" role="combobox">
-
-                                        </div>
+                                        <select name="DE:{{ $field['name'] }}[]"
+                                                id={{ $field['label'] }}
+                                            multiple="multiple"
+                                                class="form-select form-select-lg multi-select">
+                                            @foreach($field['options'] as $option)
+                                                <option value="{{ $option['value'] }}">{{ $option['label'] }}</option>
+                                            @endforeach
+                                        </select>
                                     @elseif ($field['displayType'] == 'CHCK')
                                         @foreach($field['options'] as $option)
                                             <div class="form-check">
