@@ -2,6 +2,7 @@
 
 namespace App\Services;
 
+use App\Models\Settings;
 use Illuminate\Support\Facades\Http;
 
 class WorkfrontService
@@ -14,7 +15,7 @@ class WorkfrontService
     public function __construct()
     {
         $this->baseUrl = config('services.workfront.url');
-        $this->token = session('workfront_access_token') ?? config('services.workfront.token');
+        $this->token = Settings::where('key', 'workfront_access_token')->value('value') ?? config('services.workfront.token');
 
     }
 
@@ -28,9 +29,12 @@ class WorkfrontService
     protected function request($method, $endpoint, $params = [])
     {
         $url = "{$this->baseUrl}/attask/api/{$this->apiVersion}/{$endpoint}";
-        return Http::withHeaders(['sessionID' => $this->token])
+        $response = Http::withHeaders(['sessionID' => $this->token])
             ->{$method}($url, $params)->json();
+
+        return $response;
     }
+
 
     public function getCategoryFields($categoryID)
     {
