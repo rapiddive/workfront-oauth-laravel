@@ -9,7 +9,8 @@ class WorkfrontFormController extends Controller
 {
     public function showForm(WorkfrontService $workfront)
     {
-        $queueId = config('services.workfront.queue_id', '681b3bd40014e4bc60b5313496d2bdec');
+//        $queueId = config('services.workfront.queue_id', '681b3bd40014e4bc60b5313496d2bdec');
+        $queueId = env('QUEUE_TOPIC_ID', '68765a41000578b2f474331a7800d77b');
         $formMeta = $workfront->getCustomForms($queueId);
         $forms = [];
         foreach ($formMeta['data']['objectCategories'] ?? [] as $form) {
@@ -53,10 +54,10 @@ class WorkfrontFormController extends Controller
         $queueId = config('services.workfront.queue_id');
 
         $payload = [
-            'projectID' => '681b3b9c0014e249d62ffce315ac1ddc',
+            'projectID' => env('PROJECT_ID'),
             'name' => $data['name'],
             'description' => $data['description'],
-            'queueTopicID' => '681b3bd40014e4bc60b5313496d2bdec'
+            'queueTopicID' => env('QUEUE_TOPIC_ID'),
             // + dynamic fields like DE:fieldName => value
         ];
 

@@ -32,10 +32,10 @@ return [
     ],
 
     'workfront' => [
-        'client_id' => env('WORKFRONT_CLIENT_ID', '1c1cff1090bc1aa159735dba8bf9c8a6'),
-        'client_secret' => env('WORKFRONT_CLIENT_SECRET', '4VAB46Un-yNBNSO-CCyLsiOpC1zWr4VZsSQL8JIEGHo'),
+        'client_id' => env('WORKFRONT_CLIENT_ID', 'b1a5bc0575b8cb56a211afc510e71309'),
+        'client_secret' => env('WORKFRONT_CLIENT_SECRET', 'U-79pKo1jbeGMo6QKB2VEkOEtbO_05L9ED-di4jzMEo'),
         'redirect_uri' => env('WORKFRONT_REDIRECT_URI', 'https://app.wf-oauth.test/oauth/callback'),
-        'url' => env('WORKFRONT_URL', 'https://jan2025wk2reports7.testdrive.workfront.com'),
+        'url' => env('WORKFRONT_URL', 'https://cafe.my.workfront.com'),
     ]
 
 ];
